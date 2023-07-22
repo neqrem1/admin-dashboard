@@ -24,3 +24,88 @@
     grid-row: 2 / 3;
     background-color: #e2e8f0;
 }
+
+.list {
+    list-style: none;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+a::before {
+    padding-right: 15px;
+}
+
+.home::before, .profile::before, .messages::before, .history::before, .tasks::before, .communities::before, .setting::before, .support::before, .privacy::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.home::before {
+    background: url(images/home-outline.svg) no-repeat;
+}
+
+.profile::before {
+    background: url(images/account-outline.svg) no-repeat;
+}
+
+.messages::before {
+    background: url(images/message-reply-outline.svg) no-repeat;
+}
+
+.history::before {
+    background: url(images/history.svg) no-repeat;
+}
+
+.tasks::before {
+    background: url(images/calendar-check-outline.svg) no-repeat;
+}
+
+.communities::before {
+    background: url(images/account-group-outline.svg) no-repeat;
+}
+
+.setting::before {
+    background: url(images/cog-outline.svg) no-repeat;
+}
+
+.support::before {
+    background: url(images/help-box-outline.svg) no-repeat;
+}
+
+.privacy::before {
+    background: url(images/shield-check-outline.svg) no-repeat;   
+}
+
+.dashboard {
+    color: black;
+    font-size: 30px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 100px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(63, 51, 51);
+}
