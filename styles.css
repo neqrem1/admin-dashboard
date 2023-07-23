@@ -111,6 +111,13 @@ a::before {
 
 a {
     color: black;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+a:hover {
+    padding-left: 30px;
 }
 
 a:link {
